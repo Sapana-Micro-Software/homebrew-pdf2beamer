@@ -2,7 +2,7 @@ class Pdf2beamer < Formula
   desc "Convert a PDF into a throttled, resumable Beamer deck"
   homepage "https://sapana-micro-software.github.io/Document2Slides/"
   url "https://github.com/Sapana-Micro-Software/homebrew-pdf2beamer/releases/download/v1.0.1/pdf2beamer-1.0.1.tar.gz"
-  sha256 "SHA256_PLACEHOLDER"
+  sha256 "51ad9c155fe27bed63e86801cfd0795581504562bd8dd29cf8577519264c9c8f"
   license :cannot_represent
 
   # Default path: rasterize, read embedded text, and OCR through Ollama.
