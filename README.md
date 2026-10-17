@@ -15,6 +15,10 @@ brew install sapana-micro-software/pdf2beamer/pdf2beamer
 
 A local checkout of this tap can be trusted and installed the same way. `brew tap-new` already registers it on this machine.
 
-The formula depends on Ghostscript, ImageMagick, Ollama, and Xpdf (`pdfinfo` and `pdftotext`). `--pdf` also needs `pdflatex`. The worker requires macOS 27.
+The formula depends on Ghostscript, ImageMagick, Ollama, and Xpdf (`pdfinfo` and `pdftotext`). `--pdf` also needs `pdflatex`. The worker requires macOS 27. The formula installs the manual page:
 
-Release `v1.0.0` contains `pdf2beamer-1.0.0.tar.gz`. The `d2s` binary inside it is codesigned with a hardened runtime and a timestamp.
+```sh
+man pdf2beamer
+```
+
+Release `v1.0.1` contains `pdf2beamer-1.0.1.tar.gz`: the script, the manual page, and `d2s`. The `d2s` binary is codesigned with a hardened runtime and a timestamp.
