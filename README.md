@@ -1,18 +1,20 @@
-# Sapana-Micro-Software Pdf2beamer
+# pdf2beamer
 
-## How do I install these formulae?
+Homebrew tap for [pdf2beamer](https://sapana-micro-software.github.io/Document2Slides/).
+The application source stays in a private repository. This tap distributes the signed worker binary and the `pdf2beamer` script.
 
-`brew install sapana-micro-software/pdf2beamer/<formula>`
+Copyright (C) Shyamal Chandra, 2026. All rights reserved.
 
-Or `brew tap sapana-micro-software/pdf2beamer` and then `brew install <formula>`.
+## Install
 
-Or, in a `brew bundle` `Brewfile`:
-
-```ruby
-tap "sapana-micro-software/pdf2beamer"
-brew "<formula>"
+```sh
+brew tap sapana-micro-software/pdf2beamer
+brew trust --tap sapana-micro-software/pdf2beamer
+brew install sapana-micro-software/pdf2beamer/pdf2beamer
 ```
 
-## Documentation
+A local checkout of this tap can be trusted and installed the same way. `brew tap-new` already registers it on this machine.
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+The formula depends on Ghostscript, ImageMagick, Ollama, and Xpdf (`pdfinfo` and `pdftotext`). `--pdf` also needs `pdflatex`. The worker requires macOS 27.
+
+Release `v1.0.0` contains `pdf2beamer-1.0.0.tar.gz`. The `d2s` binary inside it is codesigned with a hardened runtime and a timestamp.
