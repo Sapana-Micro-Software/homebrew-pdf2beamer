@@ -41,6 +41,6 @@ class Pdf2beamer < Formula
   test do
     assert_match "pdf2beamer(1)", shell_output("#{bin}/pdf2beamer --help")
     assert_predicate bin/"d2s", :executable?
-    assert_path_exists man1/"pdf2beamer.1.gz"
+    assert_path_exists man1/"pdf2beamer.1"
   end
 end
